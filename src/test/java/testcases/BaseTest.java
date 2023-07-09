@@ -13,6 +13,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 import util.Utility;
 
@@ -41,17 +42,18 @@ public class BaseTest {
     protected static ExtentSparkReporter htmlReporter;
     protected static ExtentReports extent;
     protected static ExtentTest test;
-    private static String PROJECT_NAME=null;
-    private static String PROJECT_URL=null;
+    private static String PROJECT_NAME = null;
+    private static String PROJECT_URL = null;
 
     // define Suite Elements
     static Properties prop;
     static FileInputStream readProperty;
     protected Logger log;
+
     @BeforeSuite
     public void defineSuiteElements() throws IOException {
         // log4j
-        DOMConfigurator.configure(System.getProperty("user.dir")+"/log4j.xml");
+        DOMConfigurator.configure(System.getProperty("user.dir") + "/log4j.xml");
         log = Logger.getLogger(getClass());
 
         // initialize the HtmlReporter
@@ -64,17 +66,18 @@ public class BaseTest {
         setProjectDetails();
 
         // initialize test
-        test = extent.createTest(PROJECT_NAME+" Test Automation Project");
+        test = extent.createTest(PROJECT_NAME + " Test Automation Project");
 
         //configuration items to change the look and fee add content, manage tests etc
-        htmlReporter.config().setDocumentTitle(PROJECT_NAME+" Test Automation Report");
-        htmlReporter.config().setReportName(PROJECT_NAME+" Test Report");
+        htmlReporter.config().setDocumentTitle(PROJECT_NAME + " Test Automation Report");
+        htmlReporter.config().setReportName(PROJECT_NAME + " Test Report");
         htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
     }
+
     @Parameters("browser")
     @BeforeMethod
-    public void setupDriver(String browser){
+    public void setupDriver(String browser) {
         WebDriver delegate = DriverFactory.getNewInstance(browser);
         setDriver(delegate);
         driver = SelfHealingDriver.create(delegate);
@@ -86,7 +89,7 @@ public class BaseTest {
         // TODO: set Page Load Timeout
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
         // TODO: Set Script Timeout
-        driver.manage().timeouts().setScriptTimeout( Duration.ofSeconds(100));
+        driver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(100));
 
         driver.get(PROJECT_URL);
         log.info("load url");
@@ -94,13 +97,13 @@ public class BaseTest {
     private void setProjectDetails() throws IOException {
         // TODO: Step1: define object of properties file
         readProperty = new FileInputStream(
-                System.getProperty("user.dir") + "/src/test/resources/properties/generalProperties.properties");
+                System.getProperty("user.dir") + "/src/test/resources/properties/environment.properties");
         prop = new Properties();
         prop.load(readProperty);
 
         // define project name from properties file
-        PROJECT_NAME=prop.getProperty("projectName");
-        PROJECT_URL=prop.getProperty("url");
+        PROJECT_NAME = prop.getProperty("projectName");
+        PROJECT_URL = prop.getProperty("url");
     }
     @AfterSuite
     public void tearDown() throws IOException {
@@ -108,19 +111,26 @@ public class BaseTest {
         //start html report after test end
         Utility.startHtmlReport(System.getProperty("user.dir"), "/testReport.html");
     }
+
     @AfterTest
     public void quit() {
-        if(driver!=null)
-        {driver.quit();}
+        if (driver != null) {
+            driver.quit();
+        }
     }
+
     @AfterMethod
     public void getResult(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
-            test.log(Status.FAIL, result.getName()+" failed with the following error: "+result.getThrowable());
+            test.log(Status.FAIL, result.getName() + " failed with the following error: " + result.getThrowable());
+            Reporter.log("Failed to perform "+result.getName(), 10, true);
         } else if (result.getStatus() == ITestResult.SUCCESS) {
             test.log(Status.PASS, result.getName());
-        } else
+            Reporter.log("Successfully perform "+result.getName(), 10, true);
+        } else {
             test.log(Status.SKIP, result.getName());
+            Reporter.log("Skip "+result.getName(), 10, true);
+        }
     }
 }
 

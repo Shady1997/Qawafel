@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Qawafel Automation Project" parallel="tests" thread-count="1">
-    <listeners>
-        <listener class-name="listeners.Listener" />
-    </listeners>
-    <test name="Login Test">
-        <parameter name="browser" value="" />
-        <classes>
-            <class name="testcases.TC01_CheckLogin" />
-        </classes>
-    </test>
-    <!--<test name="TestFirefox"> <parameter name="browser" value="Firefox"
-        /> <classes> <class name="main.Start" /> </classes> </test> -->
+<suite name="Qawafel Automation Project" parallel="tests" thread-count="1" verbose="10">
+   <suite-files>
+       <suite-file path="Regression.xml"/>
+   </suite-files>
 </suite>

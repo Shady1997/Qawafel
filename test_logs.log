@@ -1,0 +1,467 @@
+2023-07-06 04:46:08  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 04:46:08  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 04:46:31  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 04:46:33  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 04:46:36  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 04:46:36  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 04:46:36  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 04:46:38  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 04:46:44  [org.asynchttpclient.netty.handler.WebSocketHandler] (AsyncHttpClient-1-4:) onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-06 11:35:45  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 11:35:45  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 11:36:14  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 11:36:18  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 11:36:20  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 11:36:20  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 11:36:21  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 11:36:21  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 12:43:54  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-06 12:43:54  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-06 12:43:54  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-06 12:43:54  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-06 12:43:54  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-06 12:43:54  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:43:54  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:43:54  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:43:54  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-06 12:43:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 18 ms.
+2023-07-06 12:43:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] No configuration methods found
+2023-07-06 12:43:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@c446b14] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:43:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@c446b14] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:43:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@c446b14] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:43:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:44:04  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 12:44:05  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 12:44:34  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 12:44:35  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 12:44:36  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:44:38  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:44:38  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:44:39  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:44:39  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 12:44:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@c446b14] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:44:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:44:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] No configuration methods found
+2023-07-06 12:44:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@c446b14] for class null
+2023-07-06 12:44:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:44:49  [org.testng.internal.Utils] (main:) [Invoker 356691811] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@c446b14] for class null
+2023-07-06 12:44:49  [org.testng.internal.Utils] (main:) [Invoker 356691811] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@c446b14]
+2023-07-06 12:44:50  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@420a8042: 0 ms
+2023-07-06 12:57:53  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-06 12:57:53  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-06 12:57:53  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-06 12:57:53  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-06 12:57:53  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-06 12:57:53  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:57:53  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:57:53  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:57:53  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-06 12:57:54  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 17 ms.
+2023-07-06 12:57:54  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] No configuration methods found
+2023-07-06 12:57:54  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:57:54  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:57:54  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:57:54  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:57:56  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 12:57:56  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 12:58:19  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 12:58:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 12:58:22  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:58:24  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:58:24  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:58:24  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 12:58:25  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 12:58:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:58:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:58:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] No configuration methods found
+2023-07-06 12:58:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class null
+2023-07-06 12:58:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 31184256] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:58:33  [org.testng.internal.Utils] (main:) [Invoker 987489551] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class null
+2023-07-06 12:58:33  [org.testng.internal.Utils] (main:) [Invoker 987489551] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 12:58:34  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@5921b93c: 0 ms
+2023-07-06 12:59:30  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-06 12:59:30  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-06 12:59:30  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-06 12:59:30  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-06 12:59:30  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-06 12:59:30  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 12:59:30  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 12:59:30  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 12:59:30  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-06 12:59:31  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 23 ms.
+2023-07-06 12:59:31  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] No configuration methods found
+2023-07-06 12:59:31  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:59:31  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:59:31  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 12:59:31  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 12:59:33  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 12:59:33  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 13:00:02  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 13:00:02  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 13:00:04  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:06  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:06  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:07  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:07  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 13:00:07  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:00:07  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:00:07  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:00:07  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:00:07  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 13:00:08  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 13:00:23  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 13:00:23  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 13:00:24  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:26  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:26  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:27  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:27  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 13:00:27  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:00:27  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:00:27  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:00:27  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:00:28  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 13:00:28  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 13:00:44  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 13:00:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 13:00:44  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:46  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:46  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:47  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:00:47  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 13:00:47  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:00:47  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:00:47  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:00:47  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:00:47  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 13:00:47  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 13:01:03  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 13:01:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 13:01:03  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:01:05  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:01:05  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:01:06  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:01:06  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 13:01:17  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:01:17  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:01:17  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] No configuration methods found
+2023-07-06 13:01:17  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class null
+2023-07-06 13:01:17  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1315447704] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:01:25  [org.testng.internal.Utils] (main:) [Invoker 2078154554] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@5bfc257] for class null
+2023-07-06 13:01:25  [org.testng.internal.Utils] (main:) [Invoker 2078154554] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@5bfc257]
+2023-07-06 13:01:27  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@2ed9f6f8: 1 ms
+2023-07-06 13:13:59  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-06 13:13:59  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-06 13:13:59  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-06 13:13:59  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-06 13:13:59  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-06 13:13:59  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:13:59  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:13:59  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:13:59  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-06 13:14:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 51 ms.
+2023-07-06 13:14:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] No configuration methods found
+2023-07-06 13:14:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:14:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:14:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:14:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:14:02  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 13:14:02  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 13:14:23  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 13:14:23  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 13:14:26  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:14:27  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:14:28  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:14:28  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:14:29  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 13:14:34  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:14:34  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:14:34  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] No configuration methods found
+2023-07-06 13:14:34  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0] for class null
+2023-07-06 13:14:34  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1350395050] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:14:38  [org.testng.internal.Utils] (main:) [Invoker 1970856042] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0] for class null
+2023-07-06 13:14:38  [org.testng.internal.Utils] (main:) [Invoker 1970856042] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@4f20a5e0]
+2023-07-06 13:14:39  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@2213639b: 0 ms
+2023-07-06 13:19:02  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-06 13:19:02  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-06 13:19:02  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-06 13:19:02  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-06 13:19:02  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-06 13:19:02  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:02  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:02  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:02  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-06 13:19:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 20 ms.
+2023-07-06 13:19:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] No configuration methods found
+2023-07-06 13:19:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:19:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:19:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:19:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:05  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-06 13:19:05  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-06 13:19:29  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-06 13:19:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-06 13:19:31  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:19:33  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:19:33  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:19:34  [com.epam.healenium.client.RestClient] (TestNG-tests-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-06 13:19:35  [testcases.TC01_CheckLogin] (TestNG-tests-1:) logging Successfully
+2023-07-06 13:19:40  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-06 13:19:40  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:40  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] No configuration methods found
+2023-07-06 13:19:40  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class null
+2023-07-06 13:19:40  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1785687166] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:43  [org.testng.internal.Utils] (main:) [Invoker 1235908203] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648] for class null
+2023-07-06 13:19:43  [org.testng.internal.Utils] (main:) [Invoker 1235908203] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@7e46d648]
+2023-07-06 13:19:44  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@19b02dfd: 1 ms
+2023-07-07 09:01:38  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-07 09:01:38  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-07 09:01:38  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-07 09:01:38  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-07 09:01:38  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-07 09:01:38  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:01:38  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:1, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:01:38  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:01:38  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-07 09:01:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 15 ms.
+2023-07-07 09:01:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] No configuration methods found
+2023-07-07 09:01:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:01:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:01:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:01:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:01:45  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:01:45  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:02:04  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:02:04  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:02:04  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Method testLogin completed within the time-out 1000
+2023-07-07 09:02:05  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:02:05  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:02:05  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:02:05  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:02:05  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:02:05  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:02:15  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Method testLogin completed within the time-out 1000
+2023-07-07 09:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:02:15  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:02:15  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:02:30  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:02:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:02:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Method testLogin completed within the time-out 1000
+2023-07-07 09:02:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:02:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:02:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:02:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:02:30  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:02:30  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:03:00  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:03:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:03:00  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Method testLogin completed within the time-out 1000
+2023-07-07 09:03:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:03:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:03:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] No configuration methods found
+2023-07-07 09:03:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class null
+2023-07-07 09:03:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 2042971662] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:03:22  [org.testng.internal.Utils] (main:) [Invoker 973219190] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@14151bc5] for class null
+2023-07-07 09:03:22  [org.testng.internal.Utils] (main:) [Invoker 973219190] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@14151bc5]
+2023-07-07 09:03:23  [org.testng.internal.Utils] (main:) [TestNG] Running:
+  C:\Users\G525585\eclipse-workspace\Qawafel\testng.xml
+
+2023-07-07 09:03:23  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@3fcbc766: 0 ms
+2023-07-07 09:05:07  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-07 09:05:07  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-07 09:05:07  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-07 09:05:07  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-07 09:05:07  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-07 09:05:07  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:07  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:1, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:07  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:07  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-07 09:05:08  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 20 ms.
+2023-07-07 09:05:08  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] No configuration methods found
+2023-07-07 09:05:08  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:08  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:08  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:08  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:10  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:05:10  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:05:28  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:05:29  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:05:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:30  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:30  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:05:30  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:05:30  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-07 09:05:39  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:05:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:05:39  [com.epam.healenium.handlers.proxy.BaseHandler] (TestNG-method=testLogin-1:) Error during findElement: 
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e27ae02e3612cfc8df53d7f065143ee, findElement {using=xpath, value=//a[text()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, goog:chromeOptions: {debuggerAddress: localhost:51556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51556/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e27ae02e3612cfc8df53d7f065143ee
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.epam.healenium.processor.FindElementProcessor.execute(FindElementProcessor.java:24)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.findElement(Unknown Source)
+	at pages.P01_LoginPage.clickLoginLink(P01_LoginPage.java:26)
+	at testcases.TC01_CheckLogin.testLogin(TC01_CheckLogin.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-07 09:05:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Method testLogin completed within the time-out 1000
+2023-07-07 09:05:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:05:39  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 779343339] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@7a639ec5]
+2023-07-07 09:05:39  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:05:39  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:07:02  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-07 09:07:02  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-07 09:07:02  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-07 09:07:02  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-07 09:07:02  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-07 09:07:02  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7]
+2023-07-07 09:07:02  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:1, instance:testcases.TC01_CheckLogin@392a04e7]
+2023-07-07 09:07:02  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7]
+2023-07-07 09:07:02  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-07 09:07:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 19 ms.
+2023-07-07 09:07:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] No configuration methods found
+2023-07-07 09:07:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:07:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:07:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:07:03  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7]
+2023-07-07 09:07:04  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:07:04  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:07:21  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:07:21  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:07:21  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Method testLogin completed within the time-out 5000
+2023-07-07 09:07:21  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:07:21  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7]
+2023-07-07 09:07:21  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:07:21  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 125790431] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@392a04e7]
+2023-07-07 09:07:21  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:07:22  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:08:14  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-07 09:08:14  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-07 09:08:14  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-07 09:08:14  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-07 09:08:14  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-07 09:08:14  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe]
+2023-07-07 09:08:14  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:1, instance:testcases.TC01_CheckLogin@2a49fe]
+2023-07-07 09:08:14  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe]
+2023-07-07 09:08:14  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-07 09:08:14  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 18 ms.
+2023-07-07 09:08:14  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] No configuration methods found
+2023-07-07 09:08:14  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:08:14  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:08:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:08:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe]
+2023-07-07 09:08:16  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:08:16  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:08:32  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:08:33  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:08:33  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Method testLogin completed within the time-out 10000
+2023-07-07 09:08:33  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:08:33  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe]
+2023-07-07 09:08:33  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:08:33  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 761577728] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@2a49fe]
+2023-07-07 09:08:33  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:08:33  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:09:32  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2023-07-07 09:09:32  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Login Test' in Parallel
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Login Test on 1  classes,  included groups:[] excluded groups:[]
+2023-07-07 09:09:32  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CheckLogin
+2023-07-07 09:09:32  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:09:32  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CheckLogin.testLogin()[pri:1, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:09:32  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:09:32  [org.testng.TestClass] (TestNG-tests-1:) ======
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 16 ms.
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] No configuration methods found
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@489543a6] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@489543a6] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Keeping method BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@489543a6] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:09:32  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String)[pri:0, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:09:34  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-07-07 09:09:34  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\G525585\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-07-07 09:09:50  [testcases.TC01_CheckLogin] (TestNG-tests-1:) load url
+2023-07-07 09:09:50  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Invoking testcases.TC01_CheckLogin.testLogin
+2023-07-07 09:09:52  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-07 09:09:53  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-07 09:09:53  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-07 09:09:53  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2023-07-07 09:09:54  [testcases.TC01_CheckLogin] (TestNG-method=testLogin-1:) logging Successfully
+2023-07-07 09:09:59  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Method testLogin completed within the time-out 10000
+2023-07-07 09:09:59  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@489543a6] for class [TestClass name=class testcases.TC01_CheckLogin]
+2023-07-07 09:09:59  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:09:59  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] No configuration methods found
+2023-07-07 09:09:59  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@489543a6] for class null
+2023-07-07 09:09:59  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 758705661] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:10:02  [org.testng.internal.Utils] (main:) [Invoker 801142660] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@489543a6] for class null
+2023-07-07 09:10:02  [org.testng.internal.Utils] (main:) [Invoker 801142660] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CheckLogin@489543a6]
+2023-07-07 09:10:03  [org.testng.internal.Utils] (main:) [TestNG] Running:
+  C:\Users\G525585\eclipse-workspace\Qawafel\testng.xml
+
+2023-07-07 09:10:03  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@364fd4ae: 0 ms

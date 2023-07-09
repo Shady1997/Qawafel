@@ -50,7 +50,7 @@ public class BasePage {
             public Boolean apply(WebDriver d) {
                 JavascriptExecutor js = (JavascriptExecutor) d;
                 String readyState = js.executeScript("return document.readyState").toString();
-                System.out.println("Ready State: " + readyState);
+                //System.out.println("Ready State: " + readyState);
                 return (Boolean) readyState.equals("complete");
             }
         });
@@ -58,7 +58,7 @@ public class BasePage {
     // TODO: explicit wait until web element visibility
     public static void explicitWait(WebDriver driver, String webElementXPATH) {
         // explicit wait - to wait for the compose button to be click-able
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(webElementXPATH)));
     }
     // TODO: handel fluent wait

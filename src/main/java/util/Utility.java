@@ -3,6 +3,10 @@ package util;
 import database.DatabaseConnection;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +16,7 @@ import org.openqa.selenium.io.FileHandler;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -50,6 +55,66 @@ public class Utility {
         }
         return cellData;
     }
+    public static String[][] readExcelData(String SheetName) {
+        XSSFWorkbook workBook;
+        XSSFSheet sheet;
+        String projectPath = System.getProperty("user.dir");
+        String[][] excelData=null;
+        try {
+            workBook = new XSSFWorkbook(projectPath + "/src/test/resources/data_driven/data.xlsx");
+            sheet = workBook.getSheet(SheetName);
+            int numberOfRows=sheet.getPhysicalNumberOfRows();
+            int numberOfColumns=sheet.getRow(0).getLastCellNum();
+
+            excelData=new String[numberOfRows-1][numberOfColumns];
+            for (int i=1;i<numberOfRows;i++)
+            {
+                for (int j=0;j<numberOfColumns;j++)
+                {
+                    excelData[i-1][j]=sheet.getRow(i).getCell(j).getStringCellValue();
+                }
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            System.out.println(e.getCause());
+            e.printStackTrace();
+        }
+        return excelData;
+    }
+    /*
+    *
+    * */
+    public static String getSingleJsonData(String jsonFilePath,String jsonField) throws IOException, ParseException {
+        JSONParser jsonParser = new JSONParser();
+
+        FileReader fileReader = new FileReader(jsonFilePath);
+        Object obj = jsonParser.parse(fileReader);
+
+        JSONObject jsonObject = (JSONObject) obj;
+        return jsonObject.get(jsonField).toString();
+    }
+    public static String[] readJson(String jsonFilePath,String jsonFieldArray,String field) throws IOException, ParseException {
+
+        JSONParser jsonParser = new JSONParser();
+
+        FileReader fileReader = new FileReader(jsonFilePath);
+        Object obj = jsonParser.parse(fileReader);
+
+        JSONObject jsonObject = (JSONObject) obj;
+        JSONArray array = (JSONArray) jsonObject.get(jsonFieldArray);
+
+        String arr[] = new String[array.size()];
+        for (int i = 0; i < array.size(); i++) {
+            JSONObject users = (JSONObject) array.get(i);
+            String fieldData = (String) users.get(field);
+
+            arr[i] = fieldData;
+        }
+        return arr;
+    }
+    /*
+    System.out.println(readJson("C:\\Users\\G525585\\eclipse-workspace\\Qawafel\\src\\test\\resources\\data_driven\\employee.json","address","street")[0]);
+    * */
 
     // TODO: connect to mysql database
     public static ResultSet getResultSet(String dbName, String port, String userName, String password, String query)

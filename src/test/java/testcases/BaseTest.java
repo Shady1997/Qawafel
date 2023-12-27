@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -37,6 +38,10 @@ import static drivers.DriverHolder.setDriver;
 public class BaseTest {
     // TODO: define web driver object
     protected WebDriver driver;
+    private static Duration shortTimeout = Duration.ofSeconds(10);
+    private static Duration longTimeout =  Duration.ofSeconds(25);
+    WebDriverWait shortWait = new WebDriverWait(driver, shortTimeout);
+    WebDriverWait longWait = new WebDriverWait(driver, longTimeout);
 
     // extend report
     protected static ExtentSparkReporter htmlReporter;

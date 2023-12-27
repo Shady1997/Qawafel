@@ -4,6 +4,9 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 import pages.P01_LoginPage;
 import retryTest.MyRetry;
@@ -16,6 +19,12 @@ public class TC01_CheckLogin extends BaseTest{
     public void testLogin() throws InterruptedException {
         new P01_LoginPage(driver).clickLoginLink().inputEmail("shady55@yahoo.com").inputPassword("shady55@yahoo.com").clickLoginButton();
         log.info("logging Successfully");
+        // HINT: the search bar has attribute name="q"
+        try {
+            shortWait.until(ExpectedConditions.visibilityOfElementLocated(By.name("q")));
+        } catch (TimeoutException ex) {
+            Assert.assertFalse("Search bar not found.",true);
+        }
         Assert.assertTrue(true);
         Thread.sleep(5000);
     }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Qawafel Automation Project" parallel="tests" thread-count="1" verbose="10">
-    <listeners>
-        <listener class-name="listeners.Listener" />
-    </listeners>
     <test name="Login Test">
-        <parameter name="browser" value="" />
+        <parameter name="browser" value="chrome-headless"/>
+        <parameter name="localization" value=""/>
         <classes>
             <class name="testcases.TC01_CheckLogin" />
         </classes>

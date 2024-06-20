@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class BasePage {
@@ -20,6 +21,7 @@ public class BasePage {
         actions.moveToElement(element);
         actions.perform();
     }
+
     // TODO: hover over web element
     public void hoverWebElement(WebDriver driver, WebElement element) {
         // Creating object of an Actions class
@@ -27,6 +29,7 @@ public class BasePage {
         // Performing the mouse hover action on the target element.
         action.moveToElement(element).perform();
     }
+
     // TODO: Scroll with specific amount over web page
     public static void scrollWithSpecificSize(WebDriver driver, int sizeX, int sizeY) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -44,6 +47,7 @@ public class BasePage {
     public static void assertToObjectExistWithGetText(WebDriver driver, String expected) {
         Assert.assertEquals(driver.getPageSource().contains(expected), true);
     }
+
     // TODO: handle wait
     public static void waitForPageLoad(WebDriver driver) {
         (new WebDriverWait(driver, Duration.ofSeconds(50))).until(new ExpectedCondition<Boolean>() {
@@ -55,19 +59,52 @@ public class BasePage {
             }
         });
     }
+
     // TODO: explicit wait until web element visibility
     public static void explicitWait(WebDriver driver, String webElementXPATH) {
         // explicit wait - to wait for the compose button to be click-able
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(webElementXPATH)));
     }
+
     // TODO: handel fluent wait
-    public static void fluentWaitHandling(WebDriver driver , String webElementXPATH){
-       FluentWait wait = new FluentWait(driver)
+    public static void fluentWaitHandling(WebDriver driver, String webElementXPATH) {
+        FluentWait wait = new FluentWait(driver)
                 .withTimeout(Duration.ofSeconds(50))
                 .pollingEvery(Duration.ofSeconds(5))
                 .ignoring(Exception.class);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(webElementXPATH)));
+    }
+
+    // long explicit wait
+    public static WebDriverWait longWait(WebDriver driver) {
+        return new WebDriverWait(driver, Duration.ofSeconds(25));
+    }
+
+    // short explicit wait
+    public static WebDriverWait shortWait(WebDriver driver) {
+        return new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+    // TODO: clear all browser data after each test
+    public static void quitBrowser(WebDriver driver) {
+        // clear browser localStorage , sessionStorage and delete All Cookies
+        ((JavascriptExecutor) driver).executeScript("window.localStorage.clear();");
+        ((JavascriptExecutor) driver).executeScript("window.sessionStorage.clear();");
+        driver.manage().deleteAllCookies();
+        driver.quit();
+        // kill browser process on background
+        try {
+            String os = System.getProperty("os.name").toLowerCase();
+            if (os.contains("win")) {
+                Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+                Runtime.getRuntime().exec("taskkill /F /IM chrome.exe /T");
+            } else if (os.contains("mac") || os.contains("nix") || os.contains("nux")) {
+                Runtime.getRuntime().exec("pkill -f chromedriver");
+                Runtime.getRuntime().exec("pkill -f chrome");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

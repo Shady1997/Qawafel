@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Qawafel Automation Project" parallel="tests" thread-count="1" verbose="10">
+    <listeners>
+        <listener class-name="listeners.Listener" />
+    </listeners>
+    <parameter name="browser" value="" />
+
    <suite-files>
        <suite-file path="Regression.xml"/>
    </suite-files>

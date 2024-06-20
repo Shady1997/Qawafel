@@ -21,14 +21,14 @@
             https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
         </allure.cmd.download.url>
         <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
-        <java.version>16</java.version>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <hlm.report.mvn.version>1.1</hlm.report.mvn.version>
-        <selenium.java.version>4.10.0</selenium.java.version>
+        <selenium.java.version>4.16.1</selenium.java.version>
         <healenium.version>3.3.1</healenium.version>
-        <testng.version>7.7.0</testng.version>
-        <webdrivermanager.version>5.3.2</webdrivermanager.version>
+        <testng.version>7.8.0</testng.version>
+        <webdrivermanager.version>5.5.0</webdrivermanager.version>
     </properties>
     <pluginRepositories>
         <pluginRepository>

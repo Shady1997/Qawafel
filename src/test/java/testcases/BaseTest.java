@@ -12,7 +12,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
@@ -24,6 +23,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import static drivers.DriverHolder.setDriver;
+import static pages.BasePage.quitBrowser;
 
 
 /**
@@ -38,10 +38,6 @@ import static drivers.DriverHolder.setDriver;
 public class BaseTest {
     // TODO: define web driver object
     protected WebDriver driver;
-    private static Duration shortTimeout = Duration.ofSeconds(10);
-    private static Duration longTimeout =  Duration.ofSeconds(25);
-    WebDriverWait shortWait = new WebDriverWait(driver, shortTimeout);
-    WebDriverWait longWait = new WebDriverWait(driver, longTimeout);
 
     // extend report
     protected static ExtentSparkReporter htmlReporter;
@@ -80,10 +76,10 @@ public class BaseTest {
         htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
     }
 
-    @Parameters("browser")
+    @Parameters({"browser","localization"})
     @BeforeMethod
-    public void setupDriver(String browser) {
-        WebDriver delegate = DriverFactory.getNewInstance(browser);
+    public void setupDriver(String browser , String localization) {
+        WebDriver delegate = DriverFactory.getNewInstance(browser,localization);
         setDriver(delegate);
         driver = SelfHealingDriver.create(delegate);
 
@@ -120,8 +116,9 @@ public class BaseTest {
     @AfterTest
     public void quit() {
         if (driver != null) {
-            driver.quit();
+            quitBrowser(driver);
         }
+
     }
 
     @AfterMethod

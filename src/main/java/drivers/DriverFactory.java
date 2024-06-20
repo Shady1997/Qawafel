@@ -8,6 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,10 +24,13 @@ import java.util.Map;
 
 public class DriverFactory {
 
-    public static WebDriver getNewInstance(String browserName) {
+    public static WebDriver getNewInstance(String browserName,String loc) {
+        ChromeOptions chromeOptions;
+        DesiredCapabilities capabilities;
+        Map<String, Object> prefs;
         switch (browserName.toLowerCase()) {
             case "chrome-headless":
-                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("start-maximized");
                 chromeOptions.addArguments("--disable-web-security");
@@ -48,19 +52,50 @@ public class DriverFactory {
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 return new EdgeDriver();
-            default:
+            case "loc-chrome":
                 chromeOptions = new ChromeOptions();
                 // TODO: handle browsers options
-                Map<String, Object> prefs = new HashMap<String, Object>();
+                prefs = new HashMap<String, Object>();
                 prefs.put("credentials_enable_service", false);
                 prefs.put("profile.password_manager_enabled", false);
+                prefs.put("profile.default_content_setting_values.notifications", 2);
 
                 chromeOptions.addArguments("start-maximized");
+                chromeOptions.addArguments("--incognito");
                 chromeOptions.addArguments("--disable-web-security");
                 chromeOptions.addArguments("--no-proxy-server");
                 chromeOptions.addArguments("--remote-allow-origins=*");
+                chromeOptions.addArguments("--disable-notifications");
+                chromeOptions.addArguments("--lang="+loc);
                 chromeOptions.setExperimentalOption("prefs", prefs);
                 chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+
+                capabilities = new DesiredCapabilities();
+                capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+                chromeOptions.merge(capabilities);
+
+                WebDriverManager.chromedriver().setup();
+                return new ChromeDriver(chromeOptions);
+            default:
+                chromeOptions = new ChromeOptions();
+                // TODO: handle browsers options
+                prefs = new HashMap<String, Object>();
+                prefs.put("credentials_enable_service", false);
+                prefs.put("profile.password_manager_enabled", false);
+                prefs.put("profile.default_content_setting_values.notifications", 2);
+
+                chromeOptions.addArguments("start-maximized");
+                chromeOptions.addArguments("--incognito");
+                chromeOptions.addArguments("--disable-web-security");
+                chromeOptions.addArguments("--no-proxy-server");
+                chromeOptions.addArguments("--remote-allow-origins=*");
+                chromeOptions.addArguments("--disable-notifications");
+                chromeOptions.setExperimentalOption("prefs", prefs);
+                chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+
+                capabilities = new DesiredCapabilities();
+                capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+                chromeOptions.merge(capabilities);
 
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver(chromeOptions);

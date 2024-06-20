@@ -21,6 +21,9 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class Utility {
@@ -55,23 +58,22 @@ public class Utility {
         }
         return cellData;
     }
+
     public static String[][] readExcelData(String SheetName) {
         XSSFWorkbook workBook;
         XSSFSheet sheet;
         String projectPath = System.getProperty("user.dir");
-        String[][] excelData=null;
+        String[][] excelData = null;
         try {
             workBook = new XSSFWorkbook(projectPath + "/src/test/resources/data_driven/data.xlsx");
             sheet = workBook.getSheet(SheetName);
-            int numberOfRows=sheet.getPhysicalNumberOfRows();
-            int numberOfColumns=sheet.getRow(0).getLastCellNum();
+            int numberOfRows = sheet.getPhysicalNumberOfRows();
+            int numberOfColumns = sheet.getRow(0).getLastCellNum();
 
-            excelData=new String[numberOfRows-1][numberOfColumns];
-            for (int i=1;i<numberOfRows;i++)
-            {
-                for (int j=0;j<numberOfColumns;j++)
-                {
-                    excelData[i-1][j]=sheet.getRow(i).getCell(j).getStringCellValue();
+            excelData = new String[numberOfRows - 1][numberOfColumns];
+            for (int i = 1; i < numberOfRows; i++) {
+                for (int j = 0; j < numberOfColumns; j++) {
+                    excelData[i - 1][j] = sheet.getRow(i).getCell(j).getStringCellValue();
                 }
             }
         } catch (IOException e) {
@@ -81,10 +83,11 @@ public class Utility {
         }
         return excelData;
     }
+
     /*
-    *
-    * */
-    public static String getSingleJsonData(String jsonFilePath,String jsonField) throws IOException, ParseException {
+     *
+     * */
+    public static String getSingleJsonData(String jsonFilePath, String jsonField) throws IOException, ParseException {
         JSONParser jsonParser = new JSONParser();
 
         FileReader fileReader = new FileReader(jsonFilePath);
@@ -93,7 +96,8 @@ public class Utility {
         JSONObject jsonObject = (JSONObject) obj;
         return jsonObject.get(jsonField).toString();
     }
-    public static String[] readJson(String jsonFilePath,String jsonFieldArray,String field) throws IOException, ParseException {
+
+    public static String[] readJson(String jsonFilePath, String jsonFieldArray, String field) throws IOException, ParseException {
 
         JSONParser jsonParser = new JSONParser();
 
@@ -181,11 +185,11 @@ public class Utility {
     }
 
     // TODO: generate integer of specific digits
-    public static int generateRandomIntWithDigitSize(int digitSize){
-        Random random =new Random();
-        int min=100000000; // smallest 9-digit number
-        int max=999999999; // Largest 9-digit number
-        return random.nextInt(max - min +1) + min;
+    public static int generateRandomIntWithDigitSize(int digitSize) {
+        Random random = new Random();
+        int min = 100000000; // smallest 9-digit number
+        int max = 999999999; // Largest 9-digit number
+        return random.nextInt(max - min + 1) + min;
     }
 
     // TODO: generate random float number
@@ -214,6 +218,7 @@ public class Utility {
         }
         return doubleFormat;
     }
+
     // TODO: generate Random Plate Number
     public static String generateRandomPlateNumber() {
         StringBuilder plateNumber = new StringBuilder();
@@ -240,5 +245,39 @@ public class Utility {
                 "cmd.exe", "/c", "cd " + reportDirName + " && " + reportFileName);
         builder.redirectErrorStream(true);
         Process p = builder.start();
+    }
+
+    // TODO: delete screenshots
+    public static void deleteFilesInFolder(String folderPath) {
+        File folder = new File(folderPath);
+        if (folder.isDirectory()) {
+            File[] files = folder.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if (file.isFile()) {
+                        boolean isDeleted = file.delete();
+                        if (isDeleted) {
+                            System.out.println("Deleted: " + file.getName());
+                        } else {
+                            System.out.println("Failed to delete: " + file.getName());
+                        }
+                    }
+                }
+            } else {
+                System.out.println("The specified folder is empty or an error occurred.");
+            }
+        } else {
+            System.out.println("The specified path is not a folder.");
+        }
+    }
+
+    // TODO: Generate random unique int
+    public static List<Integer> generateUniqueRandomNumbers(int count) {
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i <= count; i++) {
+            numbers.add(i);
+        }
+        Collections.shuffle(numbers);
+        return numbers;
     }
 }

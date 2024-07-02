@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Qawafel Automation Project" parallel="tests" thread-count="2" verbose="10">
+    <test name="Chrome Login Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="localization" value=""/>
+        <parameter name="grid" value="yes"/>
+        <parameter name="remoteURL" value="http://localhost:4444/wd/hub"/>
+        <classes>
+            <class name="testcases.TC01_CheckLogin" />
+        </classes>
+    </test>
+    <test name="Firefox Login Test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="localization" value=""/>
+        <parameter name="grid" value="yes"/>
+        <parameter name="remoteURL" value="http://localhost:4444/wd/hub"/>
+        <classes>
+            <class name="testcases.TC01_CheckLogin" />
+        </classes>
+    </test>
+    <!--<test name="TestFirefox"> <parameter name="browser" value="Firefox"
+        /> <classes> <class name="main.Start" /> </classes> </test> -->
+</suite>

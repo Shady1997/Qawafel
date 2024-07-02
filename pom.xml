@@ -25,10 +25,10 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <hlm.report.mvn.version>1.1</hlm.report.mvn.version>
-        <selenium.java.version>4.16.1</selenium.java.version>
+        <selenium.java.version>4.22.0</selenium.java.version>
         <healenium.version>3.3.1</healenium.version>
         <testng.version>7.8.0</testng.version>
-        <webdrivermanager.version>5.5.0</webdrivermanager.version>
+        <webdrivermanager.version>5.8.0</webdrivermanager.version>
     </properties>
     <pluginRepositories>
         <pluginRepository>
@@ -83,7 +83,8 @@
                         </suiteXmlFiles>
                         <testFailureIgnore>true</testFailureIgnore>
                         <systemPropertyVariables>
-                            <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                            <allure.results.directory>${project.build.directory}/allure-results
+                            </allure.results.directory>
                         </systemPropertyVariables>
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

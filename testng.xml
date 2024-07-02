@@ -7,6 +7,6 @@
     <parameter name="browser" value="" />
 
    <suite-files>
-       <suite-file path="Regression.xml"/>
+       <suite-file path="RegressionRemote.xml"/>
    </suite-files>
 </suite>

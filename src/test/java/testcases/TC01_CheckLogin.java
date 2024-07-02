@@ -17,7 +17,7 @@ public class TC01_CheckLogin extends BaseTest{
     @Story("Login")
     @Description("Login to Application")
 //    @Attachment(value = "test", type = "image/png")
-    @Test(priority = 1,retryAnalyzer = MyRetry.class,threadPoolSize = 1,invocationCount = 1,timeOut = 500000,description = "Login to Website")
+    @Test(priority = 1,retryAnalyzer = MyRetry.class,threadPoolSize = 1,invocationCount = 1,timeOut = 500000,description = "Login to Website",groups = "smoke")
     public void testLogin() throws InterruptedException {
         new P01_LoginPage(driver).clickLoginLink().inputEmail("shady55@yahoo.com").inputPassword("shady55@yahoo.com").clickLoginButton();
         log.info("logging Successfully");

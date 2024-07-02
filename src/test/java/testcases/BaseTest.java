@@ -76,10 +76,10 @@ public class BaseTest {
         htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
     }
 
-    @Parameters({"browser","localization"})
+    @Parameters({"browser", "localization", "grid", "remoteURL"})
     @BeforeMethod
-    public void setupDriver(String browser , String localization) {
-        WebDriver delegate = DriverFactory.getNewInstance(browser,localization);
+    public void setupDriver(@Optional String browser, @Optional String localization, @Optional String grid, @Optional String remoteURL) {
+        WebDriver delegate = DriverFactory.getNewInstance(browser, localization, grid, remoteURL);
         setDriver(delegate);
         driver = SelfHealingDriver.create(delegate);
 
@@ -95,6 +95,7 @@ public class BaseTest {
         driver.get(PROJECT_URL);
         log.info("load url");
     }
+
     private void setProjectDetails() throws IOException {
         // TODO: Step1: define object of properties file
         readProperty = new FileInputStream(
@@ -106,6 +107,7 @@ public class BaseTest {
         PROJECT_NAME = prop.getProperty("projectName");
         PROJECT_URL = prop.getProperty("url");
     }
+
     @AfterSuite
     public void tearDown() throws IOException {
         extent.flush();
@@ -116,7 +118,7 @@ public class BaseTest {
     @AfterTest
     public void quit() {
         if (driver != null) {
-            quitBrowser(driver);
+//            quitBrowser(driver);
         }
 
     }
@@ -125,13 +127,13 @@ public class BaseTest {
     public void getResult(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             test.log(Status.FAIL, result.getName() + " failed with the following error: " + result.getThrowable());
-            Reporter.log("Failed to perform "+result.getName(), 10, true);
+            Reporter.log("Failed to perform " + result.getName(), 10, true);
         } else if (result.getStatus() == ITestResult.SUCCESS) {
             test.log(Status.PASS, result.getName());
-            Reporter.log("Successfully perform "+result.getName(), 10, true);
+            Reporter.log("Successfully perform " + result.getName(), 10, true);
         } else {
             test.log(Status.SKIP, result.getName());
-            Reporter.log("Skip "+result.getName(), 10, true);
+            Reporter.log("Skip " + result.getName(), 10, true);
         }
     }
 }

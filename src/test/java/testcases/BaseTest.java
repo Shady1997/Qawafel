@@ -11,6 +11,7 @@ import drivers.DriverFactory;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -93,6 +94,9 @@ public class BaseTest {
         driver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(100));
 
         driver.get(PROJECT_URL);
+        // Bypass WebDriver detection by Cloudflare with a simple JavaScript workaround
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})");
         log.info("load url");
     }
 
@@ -118,7 +122,7 @@ public class BaseTest {
     @AfterTest
     public void quit() {
         if (driver != null) {
-//            quitBrowser(driver);
+            quitBrowser(driver);
         }
 
     }

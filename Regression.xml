@@ -6,9 +6,9 @@
         <listener class-name="reports.MyListener"/>
     </listeners>
     <test name="Chrome Login Test">
-        <parameter name="browser" value="low-network"/>
+        <parameter name="browser" value=""/>
         <classes>
-            <class name="testcases.TC01_CheckLogin"/>
+            <class name="testcases.TC01_CustomCheckLogin"/>
         </classes>
     </test>
     <!--<test name="TestFirefox"> <parameter name="browser" value="Firefox"

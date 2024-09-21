@@ -1,1 +1,0 @@
-{"uuid":"1934421a-ba9e-4ffb-978c-4894c6064ef3","name":"Chrome Login Test","children":["4c6106b4-8695-41ff-b9e7-d0b2625008d9"],"befores":[],"afters":[{"name":"quit","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1719591451300,"stop":1719591451300}],"start":1719591402383,"stop":1719591451300}

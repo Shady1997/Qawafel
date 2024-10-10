@@ -7,11 +7,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.io.FileHandler;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -27,19 +22,6 @@ import java.util.List;
 import java.util.Random;
 
 public class Utility {
-    // TODO: Capture Screenshot
-    public static void captureScreenshot(WebDriver driver, String screenshotName) {
-        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        try {
-            FileHandler.copy(takesScreenshot.getScreenshotAs(OutputType.FILE), new File(System.getProperty("user.dir")
-                    + "/src/test/resources/Screenshots/" + screenshotName + System.currentTimeMillis() + ".png"));
-        } catch (WebDriverException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     // TODO: Read Data From Excel Sheet
     public static String getExcelData(int RowNum, int ColNum, String SheetName) {
         XSSFWorkbook workBook;

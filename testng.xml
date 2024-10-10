@@ -6,7 +6,13 @@
     </listeners>
     <parameter name="browser" value="" />
 
-   <suite-files>
-       <suite-file path="RegressionRemote.xml"/>
-   </suite-files>
+    <test name="Chrome Login Test">
+        <parameter name="browser" value=""/>
+        <classes>
+            <class name="testcases.TC01_CustomCheckLogin"/>
+        </classes>
+    </test>
+<!--   <suite-files>-->
+<!--       <suite-file path="Regression.xml"/>-->
+<!--   </suite-files>-->
 </suite>

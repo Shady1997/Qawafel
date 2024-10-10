@@ -27,20 +27,18 @@ public class P01_CustomLoginPage {
     }
 
     public P01_CustomLoginPage clickLoginLink() {
-        WebElement login_link=driver.findElement(LOGIN_LINK);
-        new CustomWebElementDecorator(login_link,driver).click();
+        new CustomWebElementDecorator(LOGIN_LINK,driver).click();
         return this;
     }
 
     public P01_CustomLoginPage inputEmail(String email) {
-        WebElement email_text=driver.findElement(EMAIL_TEXT_BOX);
-        new CustomWebElementDecorator(email_text,driver).sendKeys(email);
+        new CustomWebElementDecorator(EMAIL_TEXT_BOX,driver).sendKeys(email);
         return this;
     }
 
     public P01_CustomLoginPage inputPassword(String password) {
         WebElement password_text=driver.findElement(PASSWORD_TEXT_BOX);
-        new CustomWebElementDecorator(password_text,driver).sendKeys(password);
+        new CustomWebElementDecorator(PASSWORD_TEXT_BOX,driver).sendKeys(password);
         return this;
     }
 

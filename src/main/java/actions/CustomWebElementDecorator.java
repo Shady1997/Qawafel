@@ -9,10 +9,10 @@ import static org.junit.Assert.fail;
 import static pages.BasePage.shortWait;
 
 public class CustomWebElementDecorator implements WebElement {
-    private WebElement element;
+    private By element;
     private WebDriver driver;
 
-    public CustomWebElementDecorator(WebElement element,WebDriver driver) {
+    public CustomWebElementDecorator(By element,WebDriver driver) {
         this.driver  = driver;
         this.element = element;
     }
@@ -21,12 +21,12 @@ public class CustomWebElementDecorator implements WebElement {
     public void click() {
         System.out.println("Clicking on element: " + element.toString());
         try {
-            shortWait(driver).until(ExpectedConditions.visibilityOf(element));
+            shortWait(driver).until(ExpectedConditions.visibilityOf(driver.findElement(element)));
         } catch (TimeoutException exc) {
             fail("Element not fount");
             exc.printStackTrace();
         }
-        element.click();
+        driver.findElement(element).click();
     }
 
     @Override
@@ -38,12 +38,12 @@ public class CustomWebElementDecorator implements WebElement {
     public void sendKeys(CharSequence... keysToSend) {
         System.out.println("Typing: " + keysToSend + " on element: " + element.toString());
         try {
-            shortWait(driver).until(ExpectedConditions.visibilityOf(element));
+            shortWait(driver).until(ExpectedConditions.visibilityOf(driver.findElement(element)));
         } catch (TimeoutException exc) {
             fail("Element not fount");
             exc.printStackTrace();
         }
-        element.sendKeys(keysToSend);
+        driver.findElement(element).sendKeys(keysToSend);
     }
 
     @Override

@@ -4831,3 +4831,653 @@ testcases.TC01_CustomCheckLogin
 2024-09-21 08:25:22  [org.testng.internal.Utils] (main:) [Invoker 2078154554] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CustomCheckLogin@7b208b45]
 2024-09-21 08:25:23  [org.testng.internal.Utils] (main:) [TestNG] Time taken by [MyListener passed=1 failed=0 skipped=0]: 6 ms
 2024-09-21 08:25:23  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@7f73ce28: 0 ms
+2024-09-27 00:02:15  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2024-09-27 00:02:15  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2024-09-27 00:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Chrome Login Test' in Parallel
+2024-09-27 00:02:15  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Chrome Login Test on 1  classes,  included groups:[] excluded groups:[]
+2024-09-27 00:02:15  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CustomCheckLogin
+2024-09-27 00:02:15  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:15  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CustomCheckLogin.testLogin()[pri:1, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:15  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:15  [org.testng.TestClass] (TestNG-tests-1:) ======
+2024-09-27 00:02:16  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 20 ms.
+2024-09-27 00:02:16  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] No configuration methods found
+2024-09-27 00:02:16  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-09-27 00:02:16  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-09-27 00:02:16  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-09-27 00:02:16  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:24  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 128.0.6613.137 (resolved driver for Chrome 128)
+2024-09-27 00:02:24  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\128.0.6613.137\chromedriver.exe
+2024-09-27 00:02:41  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-09-27 00:02:42  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-09-27 00:02:44  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2024-09-27 00:02:44  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'selectorsRequest' request.java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+2024-09-27 00:02:44  [testcases.TC01_CustomCheckLogin] (TestNG-method=testLogin-1:) logging Successfully
+2024-09-27 00:02:49  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Method testLogin completed within the time-out 500000
+2024-09-27 00:02:49  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-09-27 00:02:49  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:49  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] No configuration methods found
+2024-09-27 00:02:49  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3] for class null
+2024-09-27 00:02:49  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1112400678] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:54  [org.testng.internal.Utils] (main:) [Invoker 866901553] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3] for class null
+2024-09-27 00:02:54  [org.testng.internal.Utils] (main:) [Invoker 866901553] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CustomCheckLogin@71c905a3]
+2024-09-27 00:02:56  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@186d8a71: 0 ms
+2024-10-03 14:31:01  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2024-10-03 14:31:01  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2024-10-03 14:31:01  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Chrome Login Test' in Parallel
+2024-10-03 14:31:01  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Chrome Login Test on 1  classes,  included groups:[] excluded groups:[]
+2024-10-03 14:31:01  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CustomCheckLogin
+2024-10-03 14:31:01  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:31:01  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CustomCheckLogin.testLogin()[pri:1, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:31:01  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:31:01  [org.testng.TestClass] (TestNG-tests-1:) ======
+2024-10-03 14:31:01  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 20 ms.
+2024-10-03 14:31:01  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] No configuration methods found
+2024-10-03 14:31:01  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:31:01  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:31:02  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:31:02  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:31:09  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 14:31:09  [io.github.bonigarcia.wdm.online.Downloader] (TestNG-tests-1:) Downloading https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.89/win64/chromedriver-win64.zip
+2024-10-03 14:31:15  [io.github.bonigarcia.wdm.online.Downloader] (TestNG-tests-1:) Extracting driver from compressed file chromedriver-win64.zip
+2024-10-03 14:31:21  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 14:31:52  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-03 14:31:53  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-03 14:32:43  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2f5561a4d971235551613fe8be58015, findElement {value=input-email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51632}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51632/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2f5561a4d971235551613fe8be58015
+Trying to heal...
+2024-10-03 14:32:44  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'getLastHealingData' request. 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.epam.healenium.client.RestClient.getLastHealingData(RestClient.java:180)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:27)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.findElement(Unknown Source)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:36)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7878
+		... 37 more
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+		... 36 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 36 more
+2024-10-03 14:32:44  [com.epam.healenium.processor.HealingProcessor] (TestNG-method=testLogin-1:) New element locator have not been found. There is a lack of reference data.
+2024-10-03 14:32:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Method testLogin completed within the time-out 500000
+2024-10-03 14:32:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:32:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:32:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:32:44  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:32:44  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 14:32:44  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 14:32:55  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-03 14:32:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-03 14:33:46  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49c3ad8d8a7e16686cef1293dc555d89, findElement {value=input-email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51795/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49c3ad8d8a7e16686cef1293dc555d89
+Trying to heal...
+2024-10-03 14:33:46  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'getLastHealingData' request. 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.epam.healenium.client.RestClient.getLastHealingData(RestClient.java:180)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:27)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.findElement(Unknown Source)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:36)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7878
+		... 37 more
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+		... 36 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 36 more
+2024-10-03 14:33:46  [com.epam.healenium.processor.HealingProcessor] (TestNG-method=testLogin-1:) New element locator have not been found. There is a lack of reference data.
+2024-10-03 14:33:46  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Method testLogin completed within the time-out 500000
+2024-10-03 14:33:46  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:33:46  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:33:46  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:33:46  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@27aae97b]
+2024-10-03 14:33:46  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 14:33:46  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 14:33:55  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-03 14:33:55  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 650679651] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-03 14:35:36  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2024-10-03 14:35:36  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2024-10-03 14:35:36  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Chrome Login Test' in Parallel
+2024-10-03 14:35:36  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Chrome Login Test on 1  classes,  included groups:[] excluded groups:[]
+2024-10-03 14:35:36  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CustomCheckLogin
+2024-10-03 14:35:36  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2]
+2024-10-03 14:35:36  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CustomCheckLogin.testLogin()[pri:1, instance:testcases.TC01_CustomCheckLogin@286b39c2]
+2024-10-03 14:35:36  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2]
+2024-10-03 14:35:36  [org.testng.TestClass] (TestNG-tests-1:) ======
+2024-10-03 14:35:37  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 20 ms.
+2024-10-03 14:35:37  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] No configuration methods found
+2024-10-03 14:35:37  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:35:37  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:35:37  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:35:37  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2]
+2024-10-03 14:35:39  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 14:35:39  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-03 14:35:55  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-03 14:35:56  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-03 14:36:26  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: Unable to find element with locator By.id: input-email
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: RemoteWebDriver
+Trying to heal...
+2024-10-03 14:36:26  [com.epam.healenium.handlers.proxy.BaseHandler] (TestNG-method=testLogin-1:) Error during findElement: 
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.60)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [604bbd36373ff52a5014d14c2723f7db, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52175/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 604bbd36373ff52a5014d14c2723f7db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:312)
+	at com.epam.healenium.SelfHealingEngine.getCurrentUrl(SelfHealingEngine.java:134)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:26)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.findElement(Unknown Source)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:36)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-10-03 14:36:26  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Method testLogin completed within the time-out 500000
+2024-10-03 14:36:26  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:36:26  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2]
+2024-10-03 14:36:26  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-03 14:36:26  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 873105556] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@286b39c2]
+2024-10-03 14:36:26  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.89 (resolved driver for Chrome 129)
+2024-10-03 14:36:26  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.89\chromedriver.exe
+2024-10-09 19:35:10  [org.testng.internal.Utils] (main:) [SuiteRunner] Created 1 TestRunners
+2024-10-09 19:35:10  [org.testng.internal.Utils] (main:) [ThreadUtil] Starting executor timeOut:2147483647ms workers:1 threadPoolSize:1
+2024-10-09 19:35:10  [org.testng.internal.Utils] (TestNG-tests-1:) [[SuiteWorker]] Running XML Test 'Chrome Login Test' in Parallel
+2024-10-09 19:35:10  [org.testng.internal.Utils] (TestNG-tests-1:) [TestRunner] Running test Chrome Login Test on 1  classes,  included groups:[] excluded groups:[]
+2024-10-09 19:35:10  [org.testng.TestClass] (TestNG-tests-1:) ===== Test class
+testcases.TC01_CustomCheckLogin
+2024-10-09 19:35:10  [org.testng.TestClass] (TestNG-tests-1:)   @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:35:10  [org.testng.TestClass] (TestNG-tests-1:)     @Test TC01_CustomCheckLogin.testLogin()[pri:1, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:35:10  [org.testng.TestClass] (TestNG-tests-1:)   @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:35:10  [org.testng.TestClass] (TestNG-tests-1:) ======
+2024-10-09 19:35:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Utils] DynamicGraphHelper.createDynamicGraph() took 17 ms.
+2024-10-09 19:35:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] No configuration methods found
+2024-10-09 19:35:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:35:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:35:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:35:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:35:12  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.91 (resolved driver for Chrome 129)
+2024-10-09 19:35:12  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.91\chromedriver.exe
+2024-10-09 19:35:24  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-09 19:35:25  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-09 19:36:15  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=129.0.6668.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [761029e63c57f4e4a80cba46f31bfbc7, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64970/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 761029e63c57f4e4a80cba46f31bfbc7
+Trying to heal...
+2024-10-09 19:36:15  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'getLastHealingData' request. 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.epam.healenium.client.RestClient.getLastHealingData(RestClient.java:180)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:27)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.findElement(Unknown Source)
+	at actions.CustomWebElementDecorator.sendKeys(CustomWebElementDecorator.java:41)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:35)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7878
+		... 38 more
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+		... 37 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 37 more
+2024-10-09 19:36:15  [com.epam.healenium.processor.HealingProcessor] (TestNG-method=testLogin-1:) New element locator have not been found. There is a lack of reference data.
+2024-10-09 19:36:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Method testLogin completed within the time-out 500000
+2024-10-09 19:36:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:36:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:36:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:36:15  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:36:16  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.91 (resolved driver for Chrome 129)
+2024-10-09 19:36:16  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.91\chromedriver.exe
+2024-10-09 19:36:22  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-09 19:36:22  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-09 19:37:12  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=129.0.6668.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa415ef38bb291844ba65ac06bbeb81e, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65122/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa415ef38bb291844ba65ac06bbeb81e
+Trying to heal...
+2024-10-09 19:37:12  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'getLastHealingData' request. 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.epam.healenium.client.RestClient.getLastHealingData(RestClient.java:180)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:27)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.findElement(Unknown Source)
+	at actions.CustomWebElementDecorator.sendKeys(CustomWebElementDecorator.java:41)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:35)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7878
+		... 38 more
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+		... 37 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 37 more
+2024-10-09 19:37:12  [com.epam.healenium.processor.HealingProcessor] (TestNG-method=testLogin-1:) New element locator have not been found. There is a lack of reference data.
+2024-10-09 19:37:12  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Method testLogin completed within the time-out 500000
+2024-10-09 19:37:12  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:37:12  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:37:12  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:37:12  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:37:13  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.91 (resolved driver for Chrome 129)
+2024-10-09 19:37:13  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.91\chromedriver.exe
+2024-10-09 19:37:20  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-09 19:37:20  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-09 19:38:10  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=129.0.6668.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fbd0884342f1d246bb353c5d0ba46b76, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65233}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65233/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbd0884342f1d246bb353c5d0ba46b76
+Trying to heal...
+2024-10-09 19:38:10  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'getLastHealingData' request. 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.epam.healenium.client.RestClient.getLastHealingData(RestClient.java:180)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:27)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.findElement(Unknown Source)
+	at actions.CustomWebElementDecorator.sendKeys(CustomWebElementDecorator.java:41)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:35)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7878
+		... 38 more
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+		... 37 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 37 more
+2024-10-09 19:38:10  [com.epam.healenium.processor.HealingProcessor] (TestNG-method=testLogin-1:) New element locator have not been found. There is a lack of reference data.
+2024-10-09 19:38:10  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Method testLogin completed within the time-out 500000
+2024-10-09 19:38:10  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:38:10  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:38:10  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:38:10  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @BeforeMethod BaseTest.setupDriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:38:10  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Using chromedriver 129.0.6668.91 (resolved driver for Chrome 129)
+2024-10-09 19:38:10  [io.github.bonigarcia.wdm.WebDriverManager] (TestNG-tests-1:) Exporting webdriver.chrome.driver as C:\Users\g525585\.cache\selenium\chromedriver\win64\129.0.6668.91\chromedriver.exe
+2024-10-09 19:38:17  [testcases.TC01_CustomCheckLogin] (TestNG-tests-1:) load url
+2024-10-09 19:38:17  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking testcases.TC01_CustomCheckLogin.testLogin
+2024-10-09 19:39:07  [com.epam.healenium.processor.FindElementProcessor] (TestNG-method=testLogin-1:) Failed to find an element using locator By.id: input-email
+Reason: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
+  (Session info: chrome=129.0.6668.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bb9d7741350de3b1ad67150a5b6a1fd, findElement {using=id, value=input-email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65353}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65353/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bb9d7741350de3b1ad67150a5b6a1fd
+Trying to heal...
+2024-10-09 19:39:07  [com.epam.healenium.client.RestClient] (TestNG-method=testLogin-1:) Failed to make response of 'getLastHealingData' request. 
+java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.epam.healenium.client.RestClient.getLastHealingData(RestClient.java:180)
+	at com.epam.healenium.processor.GetLastHealingDataProcessor.execute(GetLastHealingDataProcessor.java:27)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:41)
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:49)
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60)
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.findElement(Unknown Source)
+	at actions.CustomWebElementDecorator.sendKeys(CustomWebElementDecorator.java:41)
+	at pages.P01_CustomLoginPage.inputEmail(P01_CustomLoginPage.java:35)
+	at testcases.TC01_CustomCheckLogin.testLogin(TC01_CustomCheckLogin.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:7878
+		... 38 more
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+		at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+		... 37 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 37 more
+2024-10-09 19:39:07  [com.epam.healenium.processor.HealingProcessor] (TestNG-method=testLogin-1:) New element locator have not been found. There is a lack of reference data.
+2024-10-09 19:39:07  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Method testLogin completed within the time-out 500000
+2024-10-09 19:39:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class [TestClass name=class testcases.TC01_CustomCheckLogin]
+2024-10-09 19:39:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @AfterMethod BaseTest.getResult(org.testng.ITestResult)[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:39:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] No configuration methods found
+2024-10-09 19:39:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Keeping method BaseTest.quit()[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class null
+2024-10-09 19:39:11  [org.testng.internal.Utils] (TestNG-tests-1:) [Invoker 1905420854] Invoking @AfterTest BaseTest.quit()[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:39:16  [org.testng.internal.Utils] (main:) [Invoker 1559788797] Keeping method BaseTest.tearDown()[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649] for class null
+2024-10-09 19:39:16  [org.testng.internal.Utils] (main:) [Invoker 1559788797] Invoking @AfterSuite BaseTest.tearDown()[pri:0, instance:testcases.TC01_CustomCheckLogin@aa10649]
+2024-10-09 19:39:17  [org.testng.internal.Utils] (main:) [TestNG] Time taken by org.testng.internal.ExitCodeListener@77b3752b: 0 ms

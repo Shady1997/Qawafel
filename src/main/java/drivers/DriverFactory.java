@@ -197,7 +197,7 @@ public class DriverFactory {
                     chromeOptions.addArguments("--no-proxy-server");
                     chromeOptions.addArguments("--remote-allow-origins=*");
                     chromeOptions.addArguments("--disable-notifications");
-                    chromeOptions.addArguments("--headless");
+//                    chromeOptions.addArguments("--headless");
                     chromeOptions.setExperimentalOption("prefs", prefs);
                     chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
 

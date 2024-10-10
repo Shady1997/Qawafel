@@ -15,9 +15,9 @@ import org.openqa.selenium.io.FileHandler;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
@@ -279,5 +279,116 @@ public class Utility {
         }
         Collections.shuffle(numbers);
         return numbers;
+    }
+    // TODO: Support multi language on generated extend report and allure report
+    public static void replaceLinesInExtendReportHtmlFile(String filePath) throws IOException {
+        // Read the HTML file into a list of strings (each string is a line)
+        List<String> lines = Files.readAllLines(Paths.get(filePath));
+
+        // Define the new content for the specific lines
+        String line25 = "<style>\n" +
+                "    .goog-te-gadget-simple{\n" +
+                "    display:flex !important;\n" +
+                "    width:100% !important;\n" +
+                "    height:40px !important;\n" +
+                "    }\n" +
+                "    .goog-te-gadget-icon{\n" +
+                "    padding-bottom:10px !important;\n" +
+                "    }\n" +
+                "    .goog-te-gadget-simple span{\n" +
+                "    padding-top:15px !important;\n" +
+                "    }\n" +
+                "    .VIpgJd-ZVi9od-xl07Ob-lTBxed{\n" +
+                "    height:20px!important;\n" +
+                "    }\n";
+
+        String line31 = "</style>\n" +
+                "<script type=\"text/javascript\">// <![CDATA[\n" +
+                "function googleTranslateElementInit() {\n" +
+//                "    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,includedLanguages: 'az,br,de,en,ar,es,fr,he,isv,ja,ka,kr,nl,pl,ru,sv,tr,zh-CN'}, 'google_translate_element');\n" +
+                "    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');\n" +
+                "}\n" +
+                "// ]]></script>\n" +
+                "<script src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>";
+
+        String line67 = "<div id=\"google_translate_element\" style=\"float:right;height: 43px!important;width: 150px;\"></div>";
+
+        // Replace specific lines
+        lines.set(24, line25); // Line 25 (index 24 in zero-indexed list)
+        lines.set(30, line31); // Line 31 (index 30 in zero-indexed list)
+        lines.set(66, line67); // Line 67 (index 66 in zero-indexed list)
+
+        // Write the updated content back to the file
+        Files.write(Paths.get(filePath), lines);
+    }
+    public static void replaceLinesInAllureReportHtmlFile(String filePath) throws IOException {
+        // Read the HTML file into a list of strings (each string is a line)
+        List<String> lines = Files.readAllLines(Paths.get(filePath));
+
+        // Define the new content for the specific lines
+        String line5 = "<title>Allure Report</title><div id=\"google_translate_element\" style=\"float:right; height: 43px !important; width: auto !important;\"></div>\n" +
+                "\n" +
+                "<style>\n" +
+                "    .goog-te-gadget-simple {\n" +
+                "        display: flex !important;\n" +
+                "        justify-content: flex-end !important; /* Align content to the right */\n" +
+                "        width: 100% !important;\n" +
+                "        height: 40px !important;\n" +
+                "        align-items: center !important; /* Vertically center the content */\n" +
+                "    }\n" +
+                "    .goog-te-gadget-icon {\n" +
+                "        padding-bottom: 10px !important;\n" +
+                "    }\n" +
+                "    .goog-te-gadget-simple span {\n" +
+                "        padding-top: 15px !important;\n" +
+                "    }\n" +
+                "    .VIpgJd-ZVi9od-xl07Ob-lTBxed {\n" +
+                "        height: 20px !important;\n" +
+                "    }\n" +
+                "</style>\n" +
+                "\n" +
+                "<script type=\"text/javascript\">// <![CDATA[\n" +
+                "function googleTranslateElementInit() {\n" +
+                "    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');\n" +
+                "}\n" +
+                "// ]]></script>\n" +
+                "\n" +
+                "<script src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" type=\"text/javascript\"></script>\n";
+
+        // Replace specific lines
+        lines.set(4, line5); // Line 5 (index 4 in zero-indexed list)
+
+        // Write the updated content back to the file
+        Files.write(Paths.get(filePath), lines);
+    }
+    // TODO: generate allure report after test finish as single html file
+    public static void executeCommand(String command) throws IOException, InterruptedException {
+        // Set default command if none is provided
+        if (command == null || command.isEmpty()) {
+            command = "allure generate --single-file target/allure-results";
+        }
+        // Create a ProcessBuilder instance
+        ProcessBuilder processBuilder = new ProcessBuilder();
+
+        // Split the command string into arguments (especially if it has multiple parts like the 'allure generate' command)
+        processBuilder.command("bash", "-c", command);
+
+        // Redirect error stream (optional, if you want to merge standard error with standard output)
+        processBuilder.redirectErrorStream(true);
+
+        // Start the process
+        Process process = processBuilder.start();
+
+        // Capture the output of the command
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);  // Print the output to the console (or handle it as needed)
+            }
+        }
+
+        // Wait for the process to complete and get the exit value
+        int exitCode = process.waitFor();
+        System.out.println("Command executed with exit code: " + exitCode);
     }
 }

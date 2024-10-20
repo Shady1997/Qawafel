@@ -75,15 +75,16 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(webElementXPATH)));
     }
 
-    // long explicit wait
+    // TODO: long explicit wait
     public static WebDriverWait longWait(WebDriver driver) {
         return new WebDriverWait(driver, Duration.ofSeconds(25));
     }
 
-    // short explicit wait
+    // TODO: short explicit wait
     public static WebDriverWait shortWait(WebDriver driver) {
         return new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+
     // TODO: clear all browser data after each test
     public static void quitBrowser(WebDriver driver) {
         // clear browser localStorage , sessionStorage and delete All Cookies
@@ -105,6 +106,7 @@ public class BasePage {
             e.printStackTrace();
         }
     }
+
     // TODO: Capture Screenshot
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;

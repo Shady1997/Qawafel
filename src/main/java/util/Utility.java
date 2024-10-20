@@ -11,8 +11,11 @@ import org.json.simple.parser.ParseException;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.*;
+import java.nio.channels.FileChannel;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
@@ -22,6 +25,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Utility {
+
     // TODO: Read Data From Excel Sheet
     public static String getExcelData(int RowNum, int ColNum, String SheetName) {
         XSSFWorkbook workBook;
@@ -66,9 +70,6 @@ public class Utility {
         return excelData;
     }
 
-    /*
-     *
-     * */
     public static String getSingleJsonData(String jsonFilePath, String jsonField) throws IOException, ParseException {
         JSONParser jsonParser = new JSONParser();
 
@@ -98,9 +99,6 @@ public class Utility {
         }
         return arr;
     }
-    /*
-    System.out.println(readJson("C:\\Users\\G525585\\eclipse-workspace\\Qawafel\\src\\test\\resources\\data_driven\\employee.json","address","street")[0]);
-    * */
 
     // TODO: connect to mysql database
     public static ResultSet getResultSet(String dbName, String port, String userName, String password, String query)
@@ -262,6 +260,7 @@ public class Utility {
         Collections.shuffle(numbers);
         return numbers;
     }
+
     // TODO: Support multi language on generated extend report and allure report
     public static void replaceLinesInExtendReportHtmlFile(String filePath) throws IOException {
         // Read the HTML file into a list of strings (each string is a line)
@@ -303,6 +302,7 @@ public class Utility {
         // Write the updated content back to the file
         Files.write(Paths.get(filePath), lines);
     }
+
     public static void replaceLinesInAllureReportHtmlFile(String filePath) throws IOException {
         // Read the HTML file into a list of strings (each string is a line)
         List<String> lines = Files.readAllLines(Paths.get(filePath));
@@ -343,6 +343,7 @@ public class Utility {
         // Write the updated content back to the file
         Files.write(Paths.get(filePath), lines);
     }
+
     // TODO: generate allure report after test finish as single html file
     public static void executeCommand(String command) throws IOException, InterruptedException {
         // Set default command if none is provided
@@ -372,5 +373,25 @@ public class Utility {
         // Wait for the process to complete and get the exit value
         int exitCode = process.waitFor();
         System.out.println("Command executed with exit code: " + exitCode);
+    }
+
+    public static void copyFileToSrc() {
+        // Define the source file path (file in child folder)
+        Path sourcePath = Paths.get(System.getProperty("user.dir") + "/allure-report/index.html");
+
+        // Define the destination file path (to the root of the project directory)
+        Path destinationPath = Paths.get(System.getProperty("user.dir") + "/index.html");
+
+        try (FileChannel sourceChannel = FileChannel.open(sourcePath, StandardOpenOption.READ);
+             FileChannel destChannel = FileChannel.open(destinationPath, StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING)) {
+
+            // Transfer the file from source to destination
+            destChannel.transferFrom(sourceChannel, 0, sourceChannel.size());
+
+            System.out.println("File copied successfully to: " + destinationPath);
+
+        } catch (IOException e) {
+            System.err.println("Error copying file: " + e.getMessage());
+        }
     }
 }

@@ -25,6 +25,7 @@ import java.util.Properties;
 
 import static drivers.DriverHolder.setDriver;
 import static pages.BasePage.quitBrowser;
+import static util.Utility.*;
 
 
 /**
@@ -113,8 +114,11 @@ public class BaseTest {
     }
 
     @AfterSuite
-    public void tearDown() throws IOException {
+    public void tearDown() throws IOException, InterruptedException {
         extent.flush();
+        executeCommand(System.getProperty("user.dir") + "/allure-2.30.0/bin/allure generate --clean --single-file target/allure-results");
+        replaceLinesInAllureReportHtmlFile(System.getProperty("user.dir") + "/allure-report/index.html");
+        copyFileToSrc();
         //start html report after test end
         Utility.startHtmlReport(System.getProperty("user.dir"), "/testReport.html");
     }

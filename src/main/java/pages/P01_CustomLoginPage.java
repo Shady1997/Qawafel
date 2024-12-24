@@ -15,16 +15,17 @@ import static pages.BasePage.shortWait;
  * Time            : 7:27 PM
  * Description     :
  **/
-public class P01_CustomLoginPage {
+public class P01_CustomLoginPage extends BasePage{
+
+    public P01_CustomLoginPage(WebDriver driver) {
+        super(driver);
+        this.driver = driver;
+    }
     private final By LOGIN_LINK = By.xpath("//a[text()='Log in']");
     private final By PASSWORD_TEXT_BOX = By.id("input-password");
     private final By EMAIL_TEXT_BOX = By.id("input-email");
     private final By LOGIN_BUTTON = By.xpath("//button[text()='Log in']");
     private final WebDriver driver;
-
-    public P01_CustomLoginPage(WebDriver driver) {
-        this.driver = driver;
-    }
 
     public P01_CustomLoginPage clickLoginLink() {
         new CustomWebElementDecorator(LOGIN_LINK,driver).click();

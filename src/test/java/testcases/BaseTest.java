@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import static drivers.DriverHolder.getDriver;
 import static drivers.DriverHolder.setDriver;
 import static pages.BasePage.quitBrowser;
 import static util.Utility.*;
@@ -39,7 +40,7 @@ import static util.Utility.*;
 @Listeners(listeners.Listener.class)
 public class BaseTest {
     // TODO: define web driver object
-    protected WebDriver driver;
+//    protected WebDriver driver;
 
     // extend report
     protected static ExtentSparkReporter htmlReporter;
@@ -83,20 +84,20 @@ public class BaseTest {
     public void setupDriver(@Optional String browser, @Optional String localization, @Optional String grid, @Optional String remoteURL) {
         WebDriver delegate = DriverFactory.getNewInstance(browser, localization, grid, remoteURL);
         setDriver(delegate);
-        driver = SelfHealingDriver.create(delegate);
+//        driver = SelfHealingDriver.create(delegate);
 
-        driver.manage().window().maximize();
+        getDriver().manage().window().maximize();
 
         // TODO: Set Driver implicit wait
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
         // TODO: set Page Load Timeout
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+        getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
         // TODO: Set Script Timeout
-        driver.manage().timeouts().setScriptTimeout(Duration.ofSeconds(100));
+        getDriver().manage().timeouts().setScriptTimeout(Duration.ofSeconds(100));
 
-        driver.get(PROJECT_URL);
+        getDriver().get(PROJECT_URL);
         // Bypass WebDriver detection by Cloudflare with a simple JavaScript workaround
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})");
         log.info("load url");
     }
@@ -125,8 +126,8 @@ public class BaseTest {
 
     @AfterTest
     public void quit() {
-        if (driver != null) {
-            quitBrowser(driver);
+        if (getDriver() != null) {
+            quitBrowser(getDriver());
         }
 
     }

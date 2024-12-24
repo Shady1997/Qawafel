@@ -13,6 +13,8 @@ import org.testng.annotations.Test;
 import pages.P01_LoginPage;
 import retryTest.MyRetry;
 
+import static drivers.DriverHolder.getDriver;
+
 public class TC01_CheckLogin extends BaseTest{
     @Epic("New Login Features")
     @Story("Login")
@@ -20,7 +22,7 @@ public class TC01_CheckLogin extends BaseTest{
 //    @Attachment(value = "test", type = "image/png")
     @Test(priority = 1,retryAnalyzer = MyRetry.class,threadPoolSize = 1,invocationCount = 1,timeOut = 500000,description = "Login to Website",groups = "smoke")
     public void testLogin() throws InterruptedException {
-        new P01_LoginPage(driver).clickLoginLink().inputEmail("shady55@yahoo.com").inputPassword("shady55@yahoo.com").clickLoginButton();
+        new P01_LoginPage(getDriver()).clickLoginLink().inputEmail("shady55@yahoo.com").inputPassword("shady55@yahoo.com").clickLoginButton();
         log.info("logging Successfully");
 //         HINT: the search bar has attribute name="q"
         try {

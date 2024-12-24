@@ -169,29 +169,126 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.11.2</version>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>com.epam.healenium</groupId>-->
-<!--                <artifactId>hlm-report-mvn</artifactId>-->
-<!--                <version>${hlm.report.mvn.version}</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>hlmReport</id>-->
-<!--                        <phase>compile</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>initReport</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                    <execution>-->
-<!--                        <id>hlmReportB</id>-->
-<!--                        <phase>test</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>buildReport</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>com.epam.healenium</groupId>
+                <artifactId>hlm-report-mvn</artifactId>
+                <version>${hlm.report.mvn.version}</version>
+                <executions>
+                    <execution>
+                        <id>hlmReport</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>initReport</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>hlmReportB</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>buildReport</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>chrome</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/classic_page_object/*</exclude>
+                            </excludes>
+                            <systemPropertyVariables>
+                                <selenide.browser>chrome</selenide.browser>
+                                <selenide.headless>true</selenide.headless>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>ie</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <systemPropertyVariables>
+                                <selenide.browser>internet explorer</selenide.browser>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>edge</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <systemPropertyVariables>
+                                <selenide.browser>edge</selenide.browser>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>firefox</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/classic_page_object/*</exclude>
+                            </excludes>
+                            <systemPropertyVariables>
+                                <selenide.browser>firefox</selenide.browser>
+                                <selenide.headless>true</selenide.headless>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>safari</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/classic_page_object/*</exclude>
+                            </excludes>
+                            <systemPropertyVariables>
+                                <selenide.browser>safari</selenide.browser>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>

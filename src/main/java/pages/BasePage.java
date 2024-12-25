@@ -19,7 +19,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class BasePage {
-    WebDriver driver;
+    protected WebDriver driver;
     WebDriverWait wait;
 
     public BasePage() {

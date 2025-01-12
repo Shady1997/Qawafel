@@ -252,13 +252,20 @@ public class Utility {
     }
 
     // TODO: Generate random unique int
-    public static List<Integer> generateUniqueRandomNumbers(int count) {
-        List<Integer> numbers = new ArrayList<>();
-        for (int i = 1; i <= count; i++) {
-            numbers.add(i);
+    public static List<Integer> generateRandomUniqueInts(int size) {
+        // List to store unique integers
+        List<Integer> allNumbers = new ArrayList<>();
+
+        // Add numbers from 1 to 6
+        for (int i = 1; i <= 6; i++) {
+            allNumbers.add(i);
         }
-        Collections.shuffle(numbers);
-        return numbers;
+
+        // Shuffle the list to randomize the order
+        Collections.shuffle(allNumbers);
+
+        // Return a sublist of the first 'size' elements
+        return allNumbers.subList(0, size);
     }
 
     // TODO: Support multi language on generated extend report and allure report

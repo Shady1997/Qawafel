@@ -8,8 +8,10 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.nio.channels.FileChannel;
 import java.nio.file.Files;
@@ -402,6 +404,7 @@ public class Utility {
         }
     }
 
+    // open network tab
     public static void openBrowserNetworkTab() throws AWTException {
         // Create Robot instance
         Robot robot = new Robot();
@@ -437,6 +440,54 @@ public class Utility {
 
             // Add a small delay between presses
             robot.delay(200);
+        }
+    }
+
+    // Smart Assertion
+    public static boolean smartAssertion(String imagePath1, String imagePath2) {
+        try {
+            // Load images
+            BufferedImage img1 = ImageIO.read(new File(imagePath1));
+            BufferedImage img2 = ImageIO.read(new File(imagePath2));
+
+            // Load files as byte arrays
+            byte[] file1 = Files.readAllBytes(new File(imagePath1).toPath());
+            byte[] file2 = Files.readAllBytes(new File(imagePath2).toPath());
+
+            // --- Pixel-by-Pixel Comparison ---
+            int width = Math.min(img1.getWidth(), img2.getWidth());
+            int height = Math.min(img1.getHeight(), img2.getHeight());
+            int totalPixels = width * height;
+            int matchingPixels = 0;
+
+            for (int x = 0; x < width; x++) {
+                for (int y = 0; y < height; y++) {
+                    if (img1.getRGB(x, y) == img2.getRGB(x, y)) {
+                        matchingPixels++;
+                    }
+                }
+            }
+            double pixelMatchPercentage = (matchingPixels * 100.0) / totalPixels;
+
+            // --- Byte-by-Byte Comparison ---
+            int minLength = Math.min(file1.length, file2.length);
+            int matchingBytes = 0;
+
+            for (int i = 0; i < minLength; i++) {
+                if (file1[i] == file2[i]) {
+                    matchingBytes++;
+                }
+            }
+            double byteMatchPercentage = (matchingBytes * 100.0) / minLength;
+
+            // Get the minimum match percentage
+            double minMatch = Math.min(pixelMatchPercentage, byteMatchPercentage);
+
+            // Return true if minMatch is between 95% and 100%, otherwise false
+            return minMatch >= 95.0 && minMatch <= 100.0 ? true : false;
+
+        } catch (IOException e) {
+            return false; // Return false if an error occurs
         }
     }
 }

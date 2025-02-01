@@ -1,5 +1,6 @@
 package testcases;
 
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -37,7 +38,7 @@ import static util.Utility.*;
  * Time            : 7:27 PM
  * Description     :
  **/
-@Listeners(listeners.Listener.class)
+@Listeners({listeners.Listener.class, ChainTestListener.class})
 public class BaseTest {
     // TODO: define web driver object
 //    protected WebDriver driver;

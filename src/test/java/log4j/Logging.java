@@ -17,7 +17,7 @@ public class Logging {
     public static void main(String[] args) {
         // TODO : define log4j properties
 //        PropertyConfigurator.configure("C:/Users/G525585/eclipse-workspace/XYZ_Bank/src/test/java/log4j/log4j.properties");
-        DOMConfigurator.configure("C:/Users/G525585/eclipse-workspace/XYZ_Bank/log4j.xml");
+        DOMConfigurator.configure("C:/Users/g525585/Downloads/data/MySwglabsp2/MySwglabsp2/log4j.xml");
 
         // TODO use web driver manager
         WebDriverManager.chromedriver().setup();

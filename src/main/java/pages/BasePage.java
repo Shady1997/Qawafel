@@ -4,6 +4,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +23,7 @@ import java.io.IOException;
 public class BasePage {
     protected WebDriver driver;
     WebDriverWait wait;
+    private static final Logger LOGGER = LoggerFactory.getLogger(BasePage.class);
 
     public BasePage() {
     }
@@ -231,4 +234,120 @@ public class BasePage {
             e.printStackTrace();
         }
     }
+    public static <T> T shortWaitWithRetry(WebDriver driver, ExpectedCondition<T> condition) {
+        int attempts = 0;
+        final int MAX_RETRIES = 5;
+        final Duration TIMEOUT = Duration.ofSeconds(10);
+
+        while (attempts < MAX_RETRIES) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, TIMEOUT);
+                return wait.until(condition);
+            } catch (StaleElementReferenceException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": StaleElementReferenceException - " + e.getMessage());
+            } catch (TimeoutException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": TimeoutException - " + e.getMessage());
+            } catch (NoSuchElementException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": NoSuchElementException - " + e.getMessage());
+            } catch (ElementClickInterceptedException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": ElementClickInterceptedException - " + e.getMessage());
+            } catch (ElementNotInteractableException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": ElementNotInteractableException - " + e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Attempt " + (attempts + 1) + ": Unexpected exception - " + e.getClass().getSimpleName() + " - " + e.getMessage());
+            }
+            attempts++;
+        }
+
+        throw new RuntimeException("Condition failed after " + MAX_RETRIES + " attempts.");
+    }
+
+    public static <T> T longWaitWithRetry(WebDriver driver, ExpectedCondition<T> condition) {
+        int attempts = 0;
+        final int MAX_RETRIES = 5;
+        final Duration TIMEOUT = Duration.ofSeconds(25);
+
+        while (attempts < MAX_RETRIES) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, TIMEOUT);
+                return wait.until(condition);
+            } catch (StaleElementReferenceException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": StaleElementReferenceException - " + e.getMessage());
+            } catch (TimeoutException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": TimeoutException - " + e.getMessage());
+            } catch (NoSuchElementException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": NoSuchElementException - " + e.getMessage());
+            } catch (ElementClickInterceptedException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": ElementClickInterceptedException - " + e.getMessage());
+            } catch (ElementNotInteractableException e) {
+                System.out.println("Attempt " + (attempts + 1) + ": ElementNotInteractableException - " + e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Attempt " + (attempts + 1) + ": Unexpected exception - " + e.getClass().getSimpleName() + " - " + e.getMessage());
+            }
+
+            attempts++;
+        }
+
+        throw new RuntimeException("Condition failed after " + MAX_RETRIES + " attempts.");
+    }
+    public boolean typeToElement(By locator, String text) {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                int finalAttempts = attempts;
+                return wait.until(driver -> {
+                    try {
+                        WebElement element = driver.findElement(locator);
+                        if (element.isDisplayed() && element.isEnabled()) {
+                            LOGGER.info("Typing to element: {}", locator);
+                            element.clear();
+                            element.sendKeys(text);
+                            return true;
+                        } else {
+                            LOGGER.warn("Element not interactable: {}", locator);
+                            return false;
+                        }
+                    } catch (NoSuchElementException e) {
+                        LOGGER.warn("Element not found or not interactable on attempt {}: {}", finalAttempts + 1, locator);
+                        return false;
+                    }
+                });
+            } catch (StaleElementReferenceException e) {
+                LOGGER.warn("StaleElementReferenceException on attempt " + (attempts + 1) + " for locator: " + locator);
+                attempts++;
+            }
+        }
+        LOGGER.error("Failed to type to element after {}" + 1 + " attempts: {}", attempts, locator);
+        return false;
+    }
+
+    public boolean clickOnElement(By locator) {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                int finalAttempts = attempts;
+                return wait.until(driver -> {
+                    try {
+                        WebElement element = driver.findElement(locator);
+                        if (element.isDisplayed() && element.isEnabled()) {
+                            LOGGER.info("Clicking element: {}", locator);
+                            element.click();
+                            return true;
+                        }
+                        LOGGER.warn("Element not clickable: " + locator);
+                        return false;
+                    } catch (NoSuchElementException e) {
+                        LOGGER.warn("Element not found or not clickable on attempt " + (finalAttempts + 1) + ": " + locator);
+                        return false;
+                    }
+                });
+            } catch (StaleElementReferenceException e) {
+                LOGGER.warn("StaleElementReferenceException on attempt " + (attempts + 1) + " for locator: " + locator);
+                attempts++;
+            }
+        }
+        LOGGER.error("Failed to click element after {}" + 1 + "attempts: {}", attempts, locator);
+        return false;
+    }
+
 }

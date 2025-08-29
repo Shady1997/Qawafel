@@ -114,7 +114,6 @@ public class BaseTest {
         PROJECT_NAME = prop.getProperty("projectName");
         PROJECT_URL = prop.getProperty("url");
     }
-
     @AfterSuite
     public void tearDown() throws IOException, InterruptedException {
         extent.flush();
